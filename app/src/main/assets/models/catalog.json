@@ -1,0 +1,4 @@
+[
+  {"name":"Qwen2.5 Coder 3B Instruct","repo":"Qwen/Qwen2.5-Coder-3B-Instruct-GGUF","format":"GGUF","recommended_quant":"Q4_K_M","category":"coding seimbang","use_case":"Model coding default untuk editor script"},
+  {"name":"Qwen3 4B","repo":"Qwen/Qwen3-4B-GGUF","format":"GGUF","recommended_quant":"Q4_K_M","category":"seimbang, reasoning, coding ringan","use_case":"Model utama untuk RAM 8 GB jika ingin kualitas bagus"}
+]

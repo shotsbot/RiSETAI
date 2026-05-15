@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LocalAI Studio"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="16dp">
+
+        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="Chat AI" />
+        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="Editor Script" />
+        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="Model Manager" />
+        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="Build APK" />
+    </GridLayout>
+</LinearLayout>
