@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="8dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Editor Script (multi-tab roadmap)" android:textStyle="bold"/>
+<EditText android:id="@+id/editorText" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="top|start" android:hint="Tulis atau tempel kode di sini"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:id="@+id/btnExplain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Explain"/>
+<Button android:id="@+id/btnPatch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Generate Patch"/>
+</LinearLayout>
+<TextView android:id="@+id/diffPreview" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true"/>
+</LinearLayout>

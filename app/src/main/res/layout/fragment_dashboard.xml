@@ -1,0 +1,8 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LocalAI Studio" android:textSize="26sp" android:textStyle="bold"/>
+<TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"><TextView android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chat AI lokal dengan streaming token"/></com.google.android.material.card.MaterialCardView>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"><TextView android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Editor script + AI patch workflow"/></com.google.android.material.card.MaterialCardView>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"><TextView android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Model manager + download resumable"/></com.google.android.material.card.MaterialCardView>
+</LinearLayout></ScrollView>
