@@ -46,9 +46,19 @@ public class ModelDownloadWorker extends Worker {
             if (!response.isSuccessful() || response.body() == null) {
                 return Result.retry();
             }
+            boolean resuming = existing > 0;
+            if (resuming && response.code() != 206) {
+                if (response.code() == 200) {
+                    existing = 0L;
+                } else {
+                    return Result.retry();
+                }
+            }
             try (RandomAccessFile out = new RandomAccessFile(target, "rw")) {
                 if (existing > 0) {
                     out.seek(existing);
+                } else {
+                    out.setLength(0);
                 }
                 byte[] buffer = new byte[8192];
                 int read;

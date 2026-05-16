@@ -42,7 +42,15 @@ public class BuildFragment extends Fragment {
         log.setText("");
         exec.execute(() -> {
             try {
-                File projectDir = new File("/workspace/RiSETAI/sample-project");
+                File projectDir = new File(requireContext().getFilesDir(), "sample-project");
+                if (!projectDir.exists()) {
+                    requireActivity().runOnUiThread(() -> appendLog(
+                            log,
+                            "Error: Project directory not found at " + projectDir.getAbsolutePath(),
+                            true
+                    ));
+                    return;
+                }
                 int code = new GradleBuildRunner().run(projectDir, task, line -> {
                     if (cancelled) return;
                     requireActivity().runOnUiThread(() -> appendLog(log, line, parser.isErrorLine(line)));
